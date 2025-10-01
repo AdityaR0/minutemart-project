@@ -22,6 +22,7 @@ const Order = require('./models/Order');
 
 // --- Initialize Express App ---
 const app = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3000;
 
 
